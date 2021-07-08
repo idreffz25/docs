@@ -3,8 +3,12 @@ title: Issues
 redirect_from:
   - /v3/issues
 versions:
-  free-pro-team: '*'
-  enterprise-server: '*'
+  fpt: '*'
+  ghes: '*'
+  ghae: '*'
+topics:
+  - API
+miniTocMaxHeadingLevel: 3
 ---
 
 ### Custom media types for issues
@@ -35,7 +39,7 @@ comments on issues and pull requests.
 
 Issue Comments use [these custom media types](#custom-media-types).
 You can read more about the use of media types in the API
-[here](/v3/media/).
+[here](/rest/overview/media-types).
 
 {% for operation in currentRestOperations %}
   {% if operation.subcategory == 'comments' %}{% include rest_operation %}{% endif %}
